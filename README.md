@@ -40,4 +40,12 @@ cd /vagrant
 
 curl -s https://laravel.build/miapp | bash
 ```
-    
+
+## 4.Entramos al proyecto en la app y levantamos los contenedores
+```bash
+cd miapp
+
+./vendor/bin/sail up -d
+
+docker ps
+```

@@ -33,3 +33,11 @@ end
 ```bash
 vagrant ssh
 ```
+
+## 3.Vamos al directorio compartido  y creamos el proyecto de laravel
+```bash
+cd /vagrant
+
+curl -s https://laravel.build/miapp | bash
+```
+    

@@ -60,3 +60,7 @@ docker ps
 http://192.168.56.10
 ```
 
+## 7.Hacemos el test de sail
+```bash
+./vendor/bin/sail test
+```

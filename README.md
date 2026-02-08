@@ -1,8 +1,12 @@
-# LaravelSails
-Laravel  sails
+# Laravel con Sails
 
+## Requisitos Previos
+ - Vagrant 
+ - Docker Desktop (en ejecución).
+ - WSL 2 (si utilizas Windows).
+ - Terminal o consola de comandos.
 
-## 1.Iniciamos el Vagrant y ponemos lo siguiente y hacemos vagrant up: 
+### 1.Iniciamos el Vagrant y ponemos lo siguiente y hacemos vagrant up: 
 ```bash
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/jammy64"
@@ -29,19 +33,19 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-## 2.Hacemos vagrant ssh y nos metemos en la maquina 
+### 2.Hacemos vagrant ssh y nos metemos en la maquina 
 ```bash
 vagrant ssh
 ```
 
-## 3.Vamos al directorio compartido  y creamos el proyecto de laravel
+### 3.Vamos al directorio compartido  y creamos el proyecto de laravel
 ```bash
 cd /vagrant
 
 curl -s https://laravel.build/miapp | bash
 ```
 
-## 4.Entramos al proyecto en la app y levantamos los contenedores
+### 4.Entramos al proyecto en la app y levantamos los contenedores
 ```bash
 cd miapp
 
@@ -50,17 +54,17 @@ cd miapp
 docker ps
 ```
 
-## 5.Creamos las tablas y migraciones 
+### 5.Creamos las tablas y migraciones 
 ```bash
 ./vendor/bin/sail artisan migrate
 ```
 
-## 6.Abrimos el navegador y probamos con la ip que tenemos en la maquina
+### 6.Abrimos el navegador y probamos con la ip que tenemos en la maquina
 ```
 http://192.168.56.10
 ```
 
-## 7.Hacemos el test de sail
+### 7.Hacemos el test de sail
 ```bash
 ./vendor/bin/sail test
 ```

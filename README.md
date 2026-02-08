@@ -54,3 +54,9 @@ docker ps
 ```bash
 ./vendor/bin/sail artisan migrate
 ```
+
+## 6.Abrimos el navegador y probamos con la ip que tenemos en la maquina
+```
+http://192.168.56.10
+```
+

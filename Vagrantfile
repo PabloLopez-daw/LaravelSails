@@ -1,9 +1,3 @@
-# LaravelSails
-Laravel  sails
-
-
-## 1.Iniciamos el Vagrant y ponemos lo siguiente y hacemos vagrant up: 
-```bash
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/jammy64"
 
@@ -27,9 +21,3 @@ Vagrant.configure("2") do |config|
     chmod +x /usr/local/bin/docker-compose
   SHELL
 end
-```
-
-## 2.Hacemos vagrant ssh y nos metemos en la maquina 
-```bash
-vagrant ssh
-```

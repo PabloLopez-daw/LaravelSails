@@ -49,3 +49,8 @@ cd miapp
 
 docker ps
 ```
+
+## 5.Creamos las tablas y migraciones 
+```bash
+./vendor/bin/sail artisan migrate
+```
